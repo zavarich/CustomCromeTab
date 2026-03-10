@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Кастомная новая вкладка",
+    "version": "0.1",
+    "description": "Кастомная новая вкладка для хрома от Zavar'ыча",
+    "icons": {
+        "16": "./media/icons/icon512x512.png",
+        "32": "./media/icons/icon512x512.png",
+        "48": "./media/icons/icon512x512.png",
+        "128": "./media/icons/icon512x512.png"
+    },
+    "permissions": [],
+    "background": {},
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

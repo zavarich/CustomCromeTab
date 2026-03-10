@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 5px 5px 5px 0px #00000075;
+}
+.search-container {
+    display: inline-block;
+    width: max-content; height: 38px;
+    border-radius: 50px;
+    cursor: default;
+} .search-container * { cursor: pointer; }
+.search-gradient {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    border-radius: 50px 0 0 50px;
+    background: linear-gradient( to right,
+        #62c,
+        transparent 25%
+    );
+    background-size: 200% 100%;
+    background-position: 70% 0%;
+    transition: .3s;
+} .search-container:has(*:hover) .search-gradient {
+    background-position: 0% 0;
+}
+.search-form {
+    position: relative;
+    top: -41px;
+}
+.search-input {
+    position: relative;
+    width: 35dvw; min-width: 300px;
+    margin: 0 10px;
+    border: 0 solid;
+    border-radius: 50px;
+    padding: 10px 7px;
+    background: transparent;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: color .3s;
+} .search-input:focus-visible { outline: 0; }
+.search-input:hover::placeholder { color: #fff; }
+.ai-search-container {
+    display: inline-block;
+    width: max-content; height: 38px;
+    border-radius: 50px;
+    cursor: default;
+} .ai-search-container * { cursor: pointer; }
+.ai-search-gradient {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    border-radius: 0 50px 50px 0;
+    background: linear-gradient( to left,
+        #62c,
+        transparent 50%
+    );
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: .3s;
+} .ai-search-container:has(*:hover) .ai-search-gradient {
+    background-position: 100% 0%;
+}
+.ai-search {
+    position: relative;
+    top: -31px;
+    border: 0 solid;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0 15px;
+    font-size: 1.3em;
+}
